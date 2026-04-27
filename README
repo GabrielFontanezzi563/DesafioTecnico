@@ -1,8 +1,8 @@
-# 🚀 User Management API - Desafio Técnico
+# User Management API - Desafio Técnico
 
 API REST desenvolvida com **Spring Boot** para gerenciamento de usuários, apresentando um sistema completo de autenticação e autorização utilizando **JWT (JSON Web Token)**.
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * **Java 21**
 * **Spring Boot 4.0.6**
@@ -13,7 +13,7 @@ API REST desenvolvida com **Spring Boot** para gerenciamento de usuários, apres
 * **Lombok** (Produtividade)
 * **Swagger/OpenAPI 3** (Documentação Interativa)
 
-## 🔐 Diferenciais de Segurança Implementados
+## Diferenciais de Segurança Implementados
 
 1.  **Senhas Criptografadas:** Utilização de `BCryptPasswordEncoder` para garantir que senhas nunca sejam salvas em texto puro.
 2.  **Proteção de Endpoints:** Separação de privilégios (`ROLE_ADMIN` e `ROLE_USER`).
@@ -24,17 +24,17 @@ API REST desenvolvida com **Spring Boot** para gerenciamento de usuários, apres
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+    git clone [https://github.com/GabrielFontanezzi563/DesafioTecnico.git]
     ```
 2.  **Importe no IntelliJ IDEA** (ou sua IDE de preferência) como um projeto Maven.
 3.  **Execute a aplicação:** Rode a classe `DesafioTecnicoApplication`.
 4.  A API estará disponível em `http://localhost:8080`.
 
-## 🐳 Documentação e Testes (Swagger)
+## Documentação e Testes (Swagger)
 
 A API conta com documentação interativa via Swagger. Para acessar, inicie a aplicação e acesse:
 
-👉 **[http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)**
+**[http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)**
 
 ### Passo a passo para testar:
 1.  **Autenticação:** No Swagger, localize o `auth-controller` e use o endpoint `/auth/login`.
