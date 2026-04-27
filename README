@@ -20,7 +20,7 @@ API REST desenvolvida com **Spring Boot** para gerenciamento de usuários, apres
 3.  **Data Transfer Objects (DTOs):** Implementação de Records Java para evitar a exposição de dados sensíveis (como hashes de senhas) nas respostas da API.
 4.  **Chave Secreta Externa:** Configuração de assinatura JWT via `application.properties`.
 
-## 📖 Como Executar o Projeto
+## Como Executar o Projeto
 
 1.  **Clone o repositório:**
     ```bash
@@ -44,4 +44,4 @@ A API conta com documentação interativa via Swagger. Para acessar, inicie a ap
 4.  **Uso:** Agora todos os endpoints do `user-controller` estarão liberados para teste direto pelo navegador!
 
 ---
-Feito por Gabriel
+Feito por Gabriel Lopes de Carvalho Fontanezzi
