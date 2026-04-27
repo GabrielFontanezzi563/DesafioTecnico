@@ -1,0 +1,47 @@
+# 🚀 User Management API - Desafio Técnico
+
+API REST desenvolvida com **Spring Boot** para gerenciamento de usuários, apresentando um sistema completo de autenticação e autorização utilizando **JWT (JSON Web Token)**.
+
+## 🛠 Tecnologias Utilizadas
+
+* **Java 21**
+* **Spring Boot 4.0.6**
+* **Spring Security** (Autenticação e Controle de Acesso)
+* **JSON Web Token (JWT)** (Segurança Stateless)
+* **Spring Data JPA** (Persistência de Dados)
+* **H2 Database** (Banco de dados em memória para testes)
+* **Lombok** (Produtividade)
+* **Swagger/OpenAPI 3** (Documentação Interativa)
+
+## 🔐 Diferenciais de Segurança Implementados
+
+1.  **Senhas Criptografadas:** Utilização de `BCryptPasswordEncoder` para garantir que senhas nunca sejam salvas em texto puro.
+2.  **Proteção de Endpoints:** Separação de privilégios (`ROLE_ADMIN` e `ROLE_USER`).
+3.  **Data Transfer Objects (DTOs):** Implementação de Records Java para evitar a exposição de dados sensíveis (como hashes de senhas) nas respostas da API.
+4.  **Chave Secreta Externa:** Configuração de assinatura JWT via `application.properties`.
+
+## 📖 Como Executar o Projeto
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+    ```
+2.  **Importe no IntelliJ IDEA** (ou sua IDE de preferência) como um projeto Maven.
+3.  **Execute a aplicação:** Rode a classe `DesafioTecnicoApplication`.
+4.  A API estará disponível em `http://localhost:8080`.
+
+## 🐳 Documentação e Testes (Swagger)
+
+A API conta com documentação interativa via Swagger. Para acessar, inicie a aplicação e acesse:
+
+👉 **[http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)**
+
+### Passo a passo para testar:
+1.  **Autenticação:** No Swagger, localize o `auth-controller` e use o endpoint `/auth/login`.
+    * **User:** `admin` | **Password:** `admin123`
+2.  **Token:** Copie o token JWT gerado na resposta.
+3.  **Autorização:** Clique no botão verde **"Authorize"** no topo da página e cole o token.
+4.  **Uso:** Agora todos os endpoints do `user-controller` estarão liberados para teste direto pelo navegador!
+
+---
+Feito por Gabriel
